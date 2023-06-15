@@ -6,7 +6,7 @@ import java.util.Random;
 public class Home3 {
     public static void main(String[] args) {
 
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
             int j = new Random().nextInt(200);
             list.add(j);
