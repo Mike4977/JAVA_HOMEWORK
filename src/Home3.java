@@ -3,6 +3,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Random;
 
+
 public class Home3 {
     public static void main(String[] args) {
 
@@ -17,8 +18,17 @@ public class Home3 {
             if(list.get(i) % 2 != 0) list.remove(i);
         }
         System.out.println(list);
+
         System.out.println(Collections.max(list));
         System.out.println(Collections.min(list));
+
+        int sum = 0;
+
+        for (int i = 0; i < list.size(); i++) sum +=list.get(i);
+
+        double avg;
+        double size = list.size();
+        System.out.println(avg = sum / size);
 
     }
 }
