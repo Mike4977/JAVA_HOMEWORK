@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Random;
+import java.util.*;
 
 
 public class Home3 {
@@ -14,9 +11,18 @@ public class Home3 {
         }
         System.out.println(list);
 
-        for (int i = 0; i < list.size(); i++) {
-            if(list.get(i) % 2 == 0) list.remove(i);
+//        for (int i = 0; i < list.size(); i++) {
+//            if(list.get(i) % 2 == 0) list.remove(i);
+//        }
+
+        Iterator<Integer> iterator = list.iterator();
+        while (iterator.hasNext()){
+            int i = iterator.next();
+            if (i % 2 == 0) {
+                iterator.remove();
+            }
         }
+
         System.out.println(list);
 
         System.out.println(Collections.max(list));
